@@ -4,6 +4,8 @@ export const pltSlider = () => {
 
     const slider = new Swiper('.plt__slider', {
         modules: [Pagination, Navigation],
+        slidesPerView: 2,
+        spaceBetween: 10,
         pagination: {
             el: '.plt__pag',
             type: 'bullets',
@@ -15,7 +17,7 @@ export const pltSlider = () => {
             nextEl: '.plt__next',
         },
         breakpoints: {
-            1200: {
+            1000: {
                 spaceBetween: 10,
                 slidesPerView: 6,
             }

@@ -42,12 +42,14 @@ export const tabs = () => {
     }
 
     const tbBtns = document.querySelectorAll('.tab-button');
-
-    tbBtns.forEach(i => {
-        i.addEventListener('click', () => {
-            i.classList.toggle('active');
+    if(tbBtns.length > 0) {
+        tbBtns.forEach(i => {
+            i.addEventListener('click', () => {
+                i.classList.toggle('active');
+            })
         })
-    })
+    }
+    
 
 
 }

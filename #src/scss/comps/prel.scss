@@ -1,3 +1,8 @@
+.prel.hide {
+    opacity: 0;
+    z-index: -1;
+}
+
 .prel {
     background-color: $bg;
     position: fixed;
@@ -9,8 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // opacity: 0;
-    // z-index: -1;
+    
     overflow-x: hidden;
     @include def-anim;
     

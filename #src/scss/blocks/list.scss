@@ -55,3 +55,21 @@
         }
     }
 }
+
+
+@media (max-width: 650px) {
+
+    .list {
+
+        &__tabs {
+            justify-content: space-between;
+            
+            &_item {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 27px;
+                margin: 0;
+            }
+        }
+    }
+}
