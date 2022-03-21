@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css">
 
 
@@ -168,12 +172,39 @@
             <section class="fl">
                 <div class="container">
                     <div class="fl__in">
-                        <div class="fl__item tab">
+                        <div class="fl__item tab tab-button">
                             Бесплатно
                         </div>
 
-                        <div class="fl__item tab">
+                        <div class="fl__item tab tab-button">
                             Геймпад
+                        </div>
+
+                        <div class="fl__item dr" data-selected>
+                            <div class="dr__head">Платформа</div>
+                            <div class="dr__list">
+                                <div class="dr__item">Платформа 1</div>
+                                <div class="dr__item">Платформа 2</div>
+                                <div class="dr__item">Платформа 3</div>
+                            </div>
+                        </div>
+
+                        <div class="fl__item dr" data-selected>
+                            <div class="dr__head">Жанр</div>
+                            <div class="dr__list">
+                                <div class="dr__item">Жанр 1</div>
+                                <div class="dr__item">Жанр 2</div>
+                                <div class="dr__item">Жанр 3</div>
+                            </div>
+                        </div>
+
+                        <div class="fl__item dr" data-selected>
+                            <div class="dr__head">Популярное</div>
+                            <div class="dr__list">
+                                <div class="dr__item">Популярное 1</div>
+                                <div class="dr__item">Популярное 2</div>
+                                <div class="dr__item">Популярное 3</div>
+                            </div>
                         </div>
                     </div>
                 </div>

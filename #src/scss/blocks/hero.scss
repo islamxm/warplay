@@ -156,3 +156,25 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding-top: 292px;
+        
+        height: 100vh;
+
+        &__in {
+            
+        }
+        &__slider {
+
+
+            &_sl {
+                
+            }
+            
+        }
+    }
+}

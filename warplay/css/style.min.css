@@ -689,6 +689,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .container {
@@ -763,8 +764,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  z-index: -1;
   overflow-x: hidden;
   transition: all 0.3s ease;
 }
@@ -935,6 +934,49 @@ body {
   margin-right: 30px;
 }
 
+@media (max-width: 1000px) {
+  .header__in {
+    flex-wrap: wrap;
+  }
+  .header__left {
+    order: 1;
+    padding-left: 10px;
+  }
+  .header__right {
+    order: 2;
+    padding-right: 10px;
+  }
+  .header__mid {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 0;
+  }
+  .header__st {
+    order: 2;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .header__st_btn {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header__search {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .header__search input {
+    display: block;
+    flex: 1 0 auto;
+  }
+  .header__search button {
+    padding: 13px;
+  }
+}
 .hero {
   height: 520px;
   overflow: hidden;
@@ -1059,6 +1101,12 @@ body {
   width: 98px;
 }
 
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: 292px;
+    height: 100vh;
+  }
+}
 .fl__in {
   padding: 35px 0;
   display: flex;
@@ -1073,6 +1121,72 @@ body {
 }
 .fl__item:last-child {
   margin-right: 0;
+}
+.fl__item.dr.active .dr__head:after {
+  transform: rotate(180deg);
+}
+.fl__item.selected .dr__head {
+  background: rgba(3, 197, 254, 0.6) !important;
+  box-shadow: 0px 7px 50px 1px rgba(0, 185, 239, 0.25) !important;
+  border-color: transparent !important;
+}
+.fl__item.dr {
+  position: relative;
+  width: 155px;
+}
+.fl__item.dr .dr__head {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #373E44;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-right: 30px;
+}
+.fl__item.dr .dr__head:after {
+  position: absolute;
+  content: url("../img/svgicons/dr-arrow.svg");
+  top: calc(50% - 14.5px);
+  right: 15px;
+  transition: all 0.3s ease;
+}
+.fl__item.dr .dr__head:hover {
+  background: rgba(0, 197, 255, 0.6);
+  border-color: transparent;
+}
+.fl__item.dr .dr__list {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% + 5px));
+  left: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  width: 100%;
+  z-index: 5;
+  height: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.fl__item.dr .dr__item {
+  color: #fff;
+  padding: 7px 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fl__item.dr .dr__item:hover {
+  background: rgba(0, 197, 255, 0.6);
 }
 
 .cards {
@@ -1162,6 +1276,7 @@ body {
 
 .last__in {
   padding: 30px 15px;
+  padding-left: 30px;
 }
 .last__title {
   margin-bottom: 20px;

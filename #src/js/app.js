@@ -1,4 +1,5 @@
 import { cardsVid } from './modules/cardsVid.js';
+import { flDropdowns } from './modules/flDropdowns.js';
 import * as flsFuncs from './modules/functions.js';
 import { headerSearch } from './modules/headerSearch.js';
 import { heroSlider } from './modules/heroSlider.js';
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cardsVid();
     
-    const el = document.querySelector('.testvideo');
+    flDropdowns();
 
     
 })

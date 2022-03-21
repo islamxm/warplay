@@ -18,4 +18,95 @@
             margin-right: 0;
         }
     }
+
+    &__item.dr.active {
+
+        .dr__head {
+            
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__item.selected {
+        .dr__head {
+            background: rgba(3, 197, 254, 0.6) !important;
+            box-shadow: 0px 7px 50px 1px rgba(0, 185, 239, 0.25) !important;   
+            border-color: transparent !important;
+        }
+    }
+
+    &__item.dr {
+        position: relative;
+        width: 155px;
+
+        .dr__head {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #373E44;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 29px;
+            color: #fff;
+            cursor: pointer;
+            @include def-anim;
+
+            position: relative;
+            padding-right: 30px;
+
+            &:after {
+                position: absolute;
+                content: url('../img/svgicons/dr-arrow.svg');
+                top: calc(50% - (29px / 2));
+                right: 15px;
+                @include def-anim;
+            }
+
+            &:hover {
+                background: rgba(0, 197, 255, 0.6);
+                border-color: transparent;
+            }
+        }
+
+        .dr__list {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(calc(100% + 5px));
+            left: 0;
+            background: rgba(255, 255, 255, 0.05);
+            // border: 1px solid #373E44;
+            border-radius: 5px;
+            width: 100%;
+            z-index: 5;
+            
+
+            height: 0;
+            @include def-anim;
+            overflow: hidden;
+        }
+
+        .dr__item {
+
+            color: #fff;
+            padding: 7px 24px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 29px;
+            cursor: pointer;
+
+            @include def-anim;
+
+            &:hover {
+                background: rgba(0, 197, 255, 0.6);
+            }
+
+        }
+    }
 }
