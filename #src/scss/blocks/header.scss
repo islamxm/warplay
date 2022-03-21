@@ -1,0 +1,117 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    &__in {
+        padding: 35px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        
+        flex: 0 0 auto;
+    }
+
+    &__right {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__mid {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 23px;
+
+        &_ic {
+            margin-right: 15px;
+        }
+
+        &_text {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 23px;
+            color: #57D6FF;
+            font-family: Aire Exterior;
+        }
+    }
+
+    &__search.active {
+        background-color: rgba(196, 196, 196, 0.2);
+        input {
+            display: block;
+        }
+    }
+    &__search {
+        display: flex;
+        background-color: #373E44;
+        border-radius: 5px;
+        @include def-anim;
+
+        input {
+            color: #fff;
+            display: none;
+            padding: 6px 15px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            cursor: pointer;
+        }
+    }
+
+    &__st {
+        display: flex;
+        align-items: center;
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 50px;
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 29px;
+            color: #fff;
+            margin: 0 7px;
+            min-width: 208px;
+        }
+
+        &_btn.header__st_btn_start {
+            background: linear-gradient(93.13deg, #527E8B -1.4%, #00C5FF 100%), #00C5FF;
+
+        }
+
+        &_btn.header__st_btn_down {
+            border: 1px solid #FFFFFF;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    }
+
+    &__ic {
+        margin-right: 30px;
+    }
+}

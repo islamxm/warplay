@@ -1,0 +1,57 @@
+.list {
+
+    &__in {
+        padding: 30px 15px;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        &_item.active {
+
+            &:after {
+                width: 100%;
+            }
+        }
+
+        &_item {
+            font-weight: 300;
+            font-size: 21.33px;
+            padding: 0 5px;
+            line-height: 32px;
+            margin-right: 60px;
+            position: relative;
+            padding-bottom: 7px;
+            color: #fff;
+            cursor: pointer;
+
+            &:after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                height: 4px;
+                width: 0;
+                @include def-anim;
+                background-color: #00C5FF;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__body {
+
+        .cards.active {
+            display: flex;
+        }
+
+        .cards {
+            display: none;
+        }
+    }
+}

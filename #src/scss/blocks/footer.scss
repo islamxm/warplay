@@ -1,0 +1,26 @@
+.footer {
+
+    &__in {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_ic {
+            margin-right: 15px;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 23px;
+            color: #545454;
+        }
+    }
+}

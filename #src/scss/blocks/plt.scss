@@ -1,0 +1,84 @@
+.plt {
+
+    &__in {
+        padding: 30px 15px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        
+
+        &_title {
+            margin-right: 15px;
+        }
+
+        &_link {
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 14px;
+            color: #fff;
+        }
+    }
+
+    &__slider {
+        // padding: 20px 0;
+        filter: drop-shadow(-15px 18px 37px rgba(0, 0, 0, 0.25));
+        position: relative;
+        margin-bottom: 35px;
+
+        &_sl {
+            background: #1F2631;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            height: 70px;
+            
+        }
+    }
+
+
+    &__next {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: 13px;
+        padding-left: 130px;
+        background: linear-gradient(270deg, rgba(40, 167, 255, 0.4) 0%, rgba(40, 167, 255, 0) 78.23%);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__pag {
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 2px;
+        z-index: 4;
+
+        &_item {
+            display: block;
+            height: 100%;
+            background-color: #CFCFCF;
+            width: 64px;
+            @include def-anim;
+            margin: 0 6px;
+            cursor: pointer;
+
+        }
+
+        &_item.plt__pag_item_active {
+            width: 340px;
+            background-color: #00C5FF;
+        }
+    }
+}

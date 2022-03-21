@@ -1,0 +1,25 @@
+//LIBS
+@import './libs/swiper.scss';
+
+
+//GLOBAL
+@import './fonts.scss';
+@import './global/vars.scss';
+@import './global/global.scss';
+
+
+//COMPONENTS
+@import './comps/button.scss';
+@import './comps/tab.scss';
+@import './comps/prel.scss';
+
+
+//BLOCKS
+@import './blocks/header.scss';
+@import './blocks/hero.scss';
+@import './blocks/fl.scss';
+@import './blocks/cards.scss';
+@import './blocks/last.scss';
+@import './blocks/plt.scss';
+@import './blocks/list.scss';
+@import './blocks/footer.scss';

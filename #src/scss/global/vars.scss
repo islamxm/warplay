@@ -1,0 +1,9 @@
+//COLORS
+
+$bg: #141C24;
+$tab: #1F2631;
+
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

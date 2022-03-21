@@ -1,0 +1,158 @@
+.hero {
+    height: 520px;
+    overflow: hidden;
+
+    &__in {
+
+        height: 100%;
+    }
+
+    &__slider {
+        height: 100%;
+
+        &_wr {
+            height: 100%;
+            
+        }
+
+        &_sl {
+            
+            height: 100%;
+
+            &_img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(0deg, #141C24 0%, rgba(20, 28, 36, 0) 98.78%);
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+                }
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &_body {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 65px;
+                height: 100%;
+
+                .container {
+                    max-width: 1200px;
+                }
+                .title {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 48px;
+                    margin-bottom: 30px;
+                }
+
+                .descr {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 29px;
+                    color: #fff;
+                    max-width: 420px;
+                    margin-bottom: 40px;
+                }
+
+                .btn {
+                    display: inline-flex;
+                    margin-top: 50px;
+                    position: relative;
+
+                    &:hover {
+
+                        .btn__hover {
+                            transform: translate(5px, 5px);
+                        }
+                    }
+
+
+
+                    &__main {
+                        padding: 19px 95px;
+                        text-transform: uppercase;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        background-image: url('../img/svgicons/btn-bg.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                        z-index: 1;
+
+                        
+                    }
+
+                    &__hover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('../img/svgicons/btn-bg-hover.svg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        z-index: 0;
+                        @include def-anim;
+                    }
+
+                    
+                }
+            }
+            
+        }
+    }
+
+    &__pag {
+        
+        height: 2px;
+        display: flex;
+        align-items: center;
+
+        &_item {
+            width: 68px;
+            background-color: #CFCFCF;
+            margin: 0 10px;
+            display: block;
+            height: 100%;
+            @include def-anim;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &_item.hero__pag_item_active {
+            background-color: #00C5FF;
+            width: 98px;
+        }
+    }
+}

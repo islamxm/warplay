@@ -1,0 +1,94 @@
+.prel {
+    background-color: $bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+    overflow-x: hidden;
+    @include def-anim;
+    
+    &__in {
+        display: flex;
+        align-items: flex-end;
+        height: 88px;
+    }   
+
+
+    .line {
+        height: 88px;
+        width: 7px;
+        background-color: #00C5FF;
+        margin: 0 10px;
+
+        &:nth-child(1) {
+            animation: prel-line-1 2s ease-in-out 0s infinite;
+        }
+
+        &:nth-child(2) {
+            animation: prel-line-2 2s ease-in-out 0.2s infinite;
+        }
+
+        &:nth-child(3) {
+            animation: prel-line-3 2s ease-in-out 0.4s infinite;
+        }
+
+        &:nth-child(4) {
+            animation: prel-line-4 2s ease-in-out 0.6s infinite;
+        }
+    }
+}
+
+@keyframes prel-line-1 {
+    0% {
+        height: 88px;
+    }
+    50% {
+        height: 10px;
+    }
+    0% {
+        height: 88px;
+    }
+}
+
+@keyframes prel-line-2 {
+    0% {
+        height: 88px;
+    }
+    50% {
+        height: 10px;
+    }
+    0% {
+        height: 88px;
+    }
+}
+
+@keyframes prel-line-3 {
+    0% {
+        height: 88px;
+    }
+    50% {
+        height: 10px;
+    }
+    0% {
+        height: 88px;
+    }
+}
+
+@keyframes prel-line-4 {
+    0% {
+        height: 88px;
+    }
+    50% {
+        height: 10px;
+    }
+    0% {
+        height: 88px;
+    }
+}
