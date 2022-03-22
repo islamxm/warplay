@@ -44,8 +44,9 @@ export const flDropdowns = () => {
                 if(e.target.classList.contains('dr__head')) {
                     els.forEach(rm => {
                         rm.classList.remove('active');
+                        // test
                     })
-                    
+
                     e.target.parentElement.classList.toggle('active');
 
                     if(e.target.parentElement.classList.contains('active')) {
