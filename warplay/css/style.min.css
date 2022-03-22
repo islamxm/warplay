@@ -2084,6 +2084,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  justify-content: center;
 }
 .cards__item {
   width: 221px;
