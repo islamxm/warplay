@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cardsVid();
     
-    flDropdowns();
+    flDropdowns('dr', 'dr__head', 'dr__list', 'dr__item');
     favBtn();
     cardSlider();
     prel();

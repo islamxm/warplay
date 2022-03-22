@@ -89,7 +89,7 @@
             transform: translateY(calc(100% + 5px));
             left: 0;
             background: #20272F;
-            // border: 1px solid #373E44;
+            overflow: hidden;
             border-radius: 5px;
             width: 100%;
             z-index: 5;

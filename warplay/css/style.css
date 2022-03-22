@@ -1228,6 +1228,7 @@ body {
   transform: translateY(calc(100% + 5px));
   left: 0;
   background: #20272F;
+  overflow: hidden;
   border-radius: 5px;
   width: 100%;
   z-index: 5;
