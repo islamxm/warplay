@@ -1185,6 +1185,10 @@ body {
   box-shadow: 0px 7px 50px 1px rgba(0, 185, 239, 0.25) !important;
   border-color: transparent !important;
 }
+.fl .dr.active .dr__list {
+  display: block;
+  z-index: 5;
+}
 .fl__item.dr {
   position: relative;
   width: 155px;
@@ -1227,9 +1231,11 @@ body {
   border-radius: 5px;
   width: 100%;
   z-index: 5;
-  height: 0;
-  transition: all 0.3s ease;
-  overflow: hidden;
+  z-index: -1;
+  display: none;
+}
+.fl__item.dr .dr__item.active {
+  background-color: #0881A7;
 }
 .fl__item.dr .dr__item {
   color: #fff;

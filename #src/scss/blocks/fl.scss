@@ -37,6 +37,14 @@
         }
     }
 
+    .dr.active {
+
+        .dr__list {
+            display: block;
+            z-index: 5;
+        }
+    }
+
     &__item.dr {
         position: relative;
         width: 155px;
@@ -87,9 +95,12 @@
             z-index: 5;
             
 
-            height: 0;
-            @include def-anim;
-            overflow: hidden;
+            z-index: -1;
+            display: none;
+        }
+
+        .dr__item.active {
+            background-color: #0881A7;
         }
 
         .dr__item {
