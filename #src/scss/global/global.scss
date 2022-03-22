@@ -94,3 +94,22 @@ body {
     color: #fff;
 }
 
+.tippy-box {
+    color: #fff;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: $bg !important;
+
+    svg {
+        top: 14px !important;
+        path {
+            fill: $bg !important;
+            
+        }
+    }
+
+}
+

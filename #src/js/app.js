@@ -10,6 +10,7 @@ import { lkTarifSlider } from './modules/lkTarifSlider.js';
 import { pltSlider } from './modules/pltSlider.js';
 import { prel } from './modules/prel.js';
 import { tabs } from './modules/tabs.js';
+import { tooltips } from './modules/tooltips.js';
 
 
 
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     prel();
     lkTarifSlider();
     cardGallery();
+    tooltips();
     // document.addEventListener('click', () => {
     //     let alldrs = document.querySelectorAll('.dr');
     //     console.log('clicked')
