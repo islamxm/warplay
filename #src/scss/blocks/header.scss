@@ -6,7 +6,7 @@
     z-index: 100;
 
     &__in {
-        padding: 35px 15px;
+        padding: 35px 0;
 
         display: flex;
         align-items: center;
@@ -115,6 +115,7 @@
         margin-right: 30px;
     }
 }
+
 
 
 @media (max-width: 1000px) {

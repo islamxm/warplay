@@ -1,0 +1,109 @@
+.lk__tarif {
+    // max-width: 1300px;
+    width: 100%;
+    &_slider {
+        padding: 50px 50px;
+        position: relative;
+
+        &_wr {
+
+        }
+
+        &_sl {
+            padding: 75px 27px 50px 27px;
+            background: #1F2631;
+            box-shadow: -15px 18px 37px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: #00C5FF;
+
+                .lk__tarif_slider_sl_head {
+                    color: #141C24;
+                }
+
+                .lk__tarif_slider_sl_pr {
+                    color: #141C24;
+                }
+
+                .lk__tarif_slider_sl_list {
+
+                    &_item {
+                        color: #000;
+                    }
+                }
+
+                .lk__tarif_slider_sl_action {
+                    color: #f1f8ff;
+                    background-color: #141C24;
+                }
+            }
+
+            &_head {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 42px;
+                color: #fff;
+                margin-bottom: 15px;
+                @include def-anim;
+            }
+
+            &_pr {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: #fff;
+                margin-bottom: 20px;
+                @include def-anim;
+            }
+
+            &_list {
+                margin-bottom: 20px;
+
+                &_item {
+                    font-weight: 300;
+                    font-size: 21.33px;
+                    line-height: 32px;
+                    color: #ababab;
+                    @include def-anim;
+                }
+            }
+
+            &_action {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                
+
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 43px;
+                color: #141C24;
+
+                @include def-anim;
+                background: #00C5FF;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &_scrollbar {
+        height: 2px;
+        // width: 100%;
+        background-color: #A0A0A0;
+        max-width: 608px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .swiper-scrollbar-drag {
+            background-color: 
+            #00C5FF;
+        }
+    }
+}

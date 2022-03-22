@@ -1,3 +1,4 @@
+import { cardGallery } from './modules/cardGallery.js';
 import { cardSlider } from './modules/cardSlider.js';
 import { cardsVid } from './modules/cardsVid.js';
 import { favBtn } from './modules/fav.js';
@@ -5,6 +6,7 @@ import { flDropdowns } from './modules/flDropdowns.js';
 import * as flsFuncs from './modules/functions.js';
 import { headerSearch } from './modules/headerSearch.js';
 import { heroSlider } from './modules/heroSlider.js';
+import { lkTarifSlider } from './modules/lkTarifSlider.js';
 import { pltSlider } from './modules/pltSlider.js';
 import { prel } from './modules/prel.js';
 import { tabs } from './modules/tabs.js';
@@ -27,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     favBtn();
     cardSlider();
     prel();
-
+    lkTarifSlider();
+    cardGallery();
     // document.addEventListener('click', () => {
     //     let alldrs = document.querySelectorAll('.dr');
     //     console.log('clicked')
