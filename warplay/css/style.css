@@ -1798,21 +1798,30 @@ body {
   margin-right: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .header__in {
     flex-wrap: wrap;
   }
   .header__left {
     order: 1;
-    padding-left: 10px;
+    padding-left: 0;
   }
   .header__right {
     order: 2;
     padding-right: 10px;
+    padding-right: 0;
   }
   .header__mid {
     order: 3;
     width: 100%;
+    padding-right: 0;
+  }
+  .header__st_btn.header__st_btn_start {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .header__mid {
     flex-wrap: wrap;
     margin-top: 15px;
     padding: 0;
