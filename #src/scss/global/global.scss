@@ -60,23 +60,25 @@ body {
 }
 
 .container {
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 15px;
+
 }
 
-@media (min-width: 1400px) {
+// @media (min-width: 1400px) {
 
-    .container {
-        padding: 0 7%;
-    }
-}
+//     .container {
+//         padding: 0 7%;
+//     }
+// }
 
-@media (max-width: 1000px) {
-    .container {
-        padding: 0 15px;
-    }
-}
+// @media (max-width: 1000px) {
+//     .container {
+//         padding: 0 15px;
+//     }
+// }
 
 
 //HELPERS

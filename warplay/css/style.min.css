@@ -1502,21 +1502,12 @@ body {
   }
 }
 .container {
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 15px;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    padding: 0 7%;
-  }
-}
-@media (max-width: 1000px) {
-  .container {
-    padding: 0 15px;
-  }
-}
 .arie {
   font-family: Aire Exterior;
 }
@@ -2083,17 +2074,15 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  justify-content: center;
+  margin-right: -2%;
 }
 .cards__item {
-  width: 221px;
-  height: 221px;
+  width: 14.4927536232%;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-right: 2%;
   transition: all 0.3s ease;
 }
 .cards__item:hover {
