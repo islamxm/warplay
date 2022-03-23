@@ -3830,6 +3830,23 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
+.lkdt__mid_avatar {
+  position: relative;
+}
+.lkdt__mid_avatar_change {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  cursor: pointer;
+}
+.lkdt__mid_avatar input {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
 .lkdt__mid_avatar_ic {
   width: 166px;
   height: 166px;
@@ -3837,6 +3854,11 @@ body {
   overflow: hidden;
   background-color: #00C5FF;
   cursor: pointer;
+}
+.lkdt__mid_avatar_ic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .lkdt__action {
   display: flex;
