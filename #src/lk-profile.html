@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/head.html')
+<body>
+    @@include('./html/prel.html')
+    <div class="wrapper">
+        @@include('./html/lk-head.html')
+        
+        
+        <main class="main">
+            <section class="lk">
+                <div class="aside-wr">
+                    
+                </div>
+                @@include('./html/aside.html')
+                
+                <div class="lk__body">
+                    
+                    <div class="lk__body_bc">
+                        <a href="#" class="lk__body_bc_item">Каталог</a>
+                        <a href="#" class="lk__body_bc_item lk__body_bc_item_current">Подписка</a>
+                    </div>
+                    <div class="lk__body_content">
+                        
+                        
+
+                        <div class="lk__prof">
+
+                            <div class="lk__prof_item item-profile">
+                                <h3 class="lk__prof_item_title">МОЙ ПРОФИЛЬ</h3>
+                                <div class="lk__prof_item_panel">
+
+                                    <div class="avatar">
+                                        <img src="./img/svgicons/avatar.svg" alt="">
+                                    </div>
+                                    <div class="descr">
+                                        <div class="decr__name">i TAUTI</div>
+                                        <div class="descr__item descr__item-about">Кто я?</div>
+                                        <div class="descr__item descr__item-mail">v.matkov@mail.com</div>
+                                        <div class="descr__item descr__item-tel">8 800 555 35 35</div>
+                                    </div>
+                                    <div class="action">
+                                        <button class="action__btn action__btn-edit">
+                                            Редактировать
+                                        </button>
+                                        <button class="action__btn action__btn-pass">
+                                            Смена пароля
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lk__prof_item item-subscription">
+                                <h3 class="lk__prof_item_title">МОЯ ПОДПИСКА</h3>
+                                <div class="lk__prof_item_panel">
+                                    <div class="time">
+                                        <div class="time__head">Осталось</div>
+                                        <div class="time__value">
+                                            45 м
+                                        </div>
+                                    </div>
+                                    <div class="rate">
+                                        Почасовая
+                                        оплата
+                                    </div>
+                                    <div class="action">
+                                        <button class="action__btn">
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="lk__prof_item item-no-subscription">
+                                <h3 class="lk__prof_item_title">МОЯ ПОДПИСКА</h3>
+                                <div class="lk__prof_item_panel">
+                                    <div class="time">
+                                        <div class="time__head">Осталось</div>
+                                        <div class="time__value">
+                                            0 м 
+                                            <div class="time__value_info" data-info="Какая-то подсказка">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="7" cy="7" r="7" fill="#727272"/>
+                                                    <path d="M8.05859 4.66016L6.96289 11H5.0293L6.13086 4.66016H8.05859ZM6.30078 3.06055C6.29297 2.75586 6.39453 2.51367 6.60547 2.33398C6.82031 2.1543 7.07227 2.0625 7.36133 2.05859C7.63867 2.05469 7.88477 2.13672 8.09961 2.30469C8.31445 2.46875 8.42383 2.69727 8.42773 2.99023C8.43555 3.29492 8.33203 3.53711 8.11719 3.7168C7.90625 3.89648 7.65625 3.98828 7.36719 3.99219C7.08984 3.99609 6.84375 3.91602 6.62891 3.75195C6.41797 3.58398 6.30859 3.35352 6.30078 3.06055Z" fill="white"/>
+                                                    </svg>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rate">
+                                        Без тарифа
+                                    </div>
+                                    <div class="action">
+                                        <button class="action__btn">
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                            <div class="lk__prof_item item-promo">
+                                <h3 class="lk__prof_item_title">Активация промокода</h3>
+                                <div class="lk__prof_item_panel">
+                                    <div class="head">
+                                        Тут Вы можете активировать подписку используя код, который Вы получили от нашего партнёра
+                                    </div>
+                                    <form class="form">
+                                        <input type="text" class="form__input" placeholder="Введите промокод здесь...">
+                                        <button class="form__btn">
+                                            Вот и хорошо
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            @@include('./html/lkdt.html')
+                        </div>
+                    </div>
+
+                    @@include('./html/lk-foot.html')
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/app.min.js"></script>
+</body>
+</html>

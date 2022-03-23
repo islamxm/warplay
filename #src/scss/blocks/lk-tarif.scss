@@ -107,3 +107,14 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+
+    .lk__tarif {
+
+        &_slider {
+            padding: 50px 15px;
+        }
+    }
+}

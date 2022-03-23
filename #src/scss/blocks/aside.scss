@@ -1,13 +1,16 @@
-// .aside-wr {
-//     width: 400px;
-//     height: 100%;
-//     flex: 0 0 auto;
-// }
+.aside-wr {
+    width: 320px;
+    height: 100%;
+    flex: 0 0 auto;
+}
 
 .aside {
     min-height: 100%;
     background-color: #1F2631;
-    width: 400px;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     &__in {
         padding-top: 200px;
@@ -72,5 +75,27 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    .aside-wr {
+        display: none;
+    }
+
+    .aside.active {
+        transform: translateX(0);
+    }
+    .aside {
+        z-index: 99;
+        transform: translateX(-100%);
+        @include def-anim;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .aside {
+        width: 100%;
     }
 }

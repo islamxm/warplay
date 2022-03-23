@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/head.html')
+<body>
+    @@include('./html/prel.html')
+    <div class="wrapper">
+        @@include('./html/lk-head.html')
+        
+        
+        <main class="main">
+            <section class="lk">
+                <div class="aside-wr">
+                    
+                </div>
+                @@include('./html/aside.html')
+                
+                <div class="lk__body">
+                    
+                    <div class="lk__body_bc">
+                        <a href="#" class="lk__body_bc_item">Каталог</a>
+                        <a href="#" class="lk__body_bc_item lk__body_bc_item_current">Подписка</a>
+                    </div>
+                    <div class="lk__body_content">
+                        <h2 class="lk__body_content_title arie">Настройка трансляции</h2>
+                        
+
+                        <div class="lk__settings">
+                            <div class="lk__settings_item">
+                                <div class="name">Битрейт</div>
+                                <div class="value value__slider">
+                                    <div class="value__range value__range-start">3</div>
+                                    
+                                    <div class="value__slider_el" id="valueSlider"></div>
+
+                                    <div class="value__range value__range-end">50</div>
+                                </div>
+                            </div>
+                            <div class="lk__settings_item">
+                                <div class="name">Вертикальная синхронизация</div>
+                                <div class="value value__select" data-value>
+                                    <div class="value__item active">Вкл</div>
+                                    <div class="value__item">Выкл</div>
+                                    <div class="value__item">Адаптивная</div>
+                                </div>
+                            </div>
+
+                            <div class="lk__settings_item">
+                                <div class="name">Кодек</div>
+                                <div class="value value__select" data-value>
+                                    <div class="value__item active">H265</div>
+                                    <div class="value__item">H266</div>
+                                </div>
+                            </div>
+
+                            <div class="lk__settings_item">
+                                <div class="name">Декодирование</div>
+                                <div class="value value__select" data-value>
+                                    <div class="value__item ">Апаратное</div>
+                                    <div class="value__item active">Software</div>
+                                </div>
+                            </div>
+
+                            <div class="lk__settings_item">
+                                <div class="name">Полноэкранный режим</div>
+                                <div class="value value__select" data-value>
+                                    <div class="value__item active">По умолчанию</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @@include('./html/lk-foot.html')
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/app.min.js"></script>
+</body>
+</html>

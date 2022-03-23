@@ -7,7 +7,19 @@ export const lkTarifSlider = () => {
             el: '.lk__tarif_scrollbar',
             draggable: true
         },
-        slidesPerView: 3,
+        slidesPerView: 1,
+        
         spaceBetween: 25,
+        breakpoints: {
+            1900: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            700: {
+                slidesPerView: 2,
+            }
+        }
     })
 }
