@@ -3059,6 +3059,7 @@ body {
   width: calc(100% - 320px);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .lk__body_bc {
   margin-bottom: 35px;
@@ -4188,11 +4189,13 @@ body {
   display: flex;
   justify-content: flex-end;
   animation: loading 2s linear infinite;
+  will-change: transform;
 }
 .load__body_panel_loading_progress {
   background-color: #00C5FF;
   height: 100%;
   animation: loading-in 2s linear infinite;
+  will-change: transform;
 }
 @keyframes loading-in {
   0% {

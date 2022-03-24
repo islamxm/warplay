@@ -88,6 +88,7 @@
                 display: flex;
                 justify-content: flex-end;
                 animation: loading 2s linear infinite;
+                will-change:transform;
 
                 &_progress {
                     background-color: 
@@ -95,6 +96,7 @@
                     height: 100%;
                     // width: 100%;
                     animation: loading-in 2s linear infinite;
+                    will-change:transform;
                     @keyframes loading-in {
                         0% {
                             width: 100%;
