@@ -33,6 +33,7 @@
 
             display: flex;
             flex-direction: column;
+            overflow: hidden;
 
 
             &_hero {
@@ -77,16 +78,46 @@
             }
 
             &_loading {
-                width: 90%;
+                width: 100%;
                 height: 7px;
                 margin: 0 auto;
                 margin-top: -3.5px;
                 position: relative;
                 z-index: 4;
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+                animation: loading 2s linear infinite;
+
                 &_progress {
                     background-color: 
                     #00C5FF;
                     height: 100%;
+                    // width: 100%;
+                    animation: loading-in 2s linear infinite;
+                    @keyframes loading-in {
+                        0% {
+                            width: 100%;
+                        }
+                        50% {
+                            width: 30%;
+                        }
+                        100% {
+                            width: 10%;
+                        }
+                    }
+                }
+
+                @keyframes loading {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    50% {
+                        transform: translateX(0%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
                 }
             }
 

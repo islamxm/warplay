@@ -4137,6 +4137,7 @@ body {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .load__body_panel_hero {
   height: 272px;
@@ -4177,16 +4178,43 @@ body {
   background: linear-gradient(0deg, #141C24 0%, rgba(20, 28, 36, 0) 98.78%);
 }
 .load__body_panel_loading {
-  width: 90%;
+  width: 100%;
   height: 7px;
   margin: 0 auto;
   margin-top: -3.5px;
   position: relative;
   z-index: 4;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  animation: loading 2s linear infinite;
 }
 .load__body_panel_loading_progress {
   background-color: #00C5FF;
   height: 100%;
+  animation: loading-in 2s linear infinite;
+}
+@keyframes loading-in {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 .load__body_panel_descr {
   flex: 1 0 auto;
